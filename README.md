@@ -1,8 +1,8 @@
-# FireStarter
+# kanban
 
-Firestarter is an Angular PWA powered by Firebase.
+kanban is an Angular PWA powered by Firebase.
 
-- [Live Demo](https://firestarter.fireship.io/)
+- [Live Demo](https://kanban.fireship.io/)
 - [Lessons and Screencasts](https://fireship.io)
 - [Join the Slack Team](https://fireship.page.link/slack)
 
@@ -21,13 +21,13 @@ Firestarter is an Angular PWA powered by Firebase.
 
 1.  Run
 
-- `git clone https://github.com/codediodeio/angular-firestarter.git firestarter`
-- `cd firestarter`
+- `git clone https://github.com/codediodeio/angular-kanban.git kanban`
+- `cd kanban`
 - `npm install`
 
 2.  Create a project at https://firebase.google.com/ and grab your web config:
 
-![](https://firebasestorage.googleapis.com/v0/b/firestarter-96e46.appspot.com/o/project-config.PNG?alt=media&token=5eabb205-7ba2-4fc3-905f-e9547055e754)
+![](https://firebasestorage.googleapis.com/v0/b/kanban-96e46.appspot.com/o/project-config.PNG?alt=media&token=5eabb205-7ba2-4fc3-905f-e9547055e754)
 
 3.  Add the config to your Angular environment
 

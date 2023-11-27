@@ -1,10 +1,14 @@
 
 <header>
-    <h1>Welcome to my Kanban App, made with Angular and Firestore.</h1>
-    <h2>Please log in to get started!</h2>
-    <p>
-        <a mat-raised-button color="accent" style="margin-right: 10px;" routerLink="/login">Log In</a>
-    </p>
+    <h1>Welcome to my Kanban App!</h1>
+    <h2>Powered by <img style="width: 1.25em;" src="/assets/angular-logo.svg" /> Angular and <img style="width: 0.9em;" src="/assets/firebase-logo.svg" /> Firebase</h2>
+
+    <div *ngIf="!(afAuth.authState | async)">
+        <h3>Please log in to get started!</h3>
+        <p>
+            <a mat-raised-button color="accent" style="margin-right: 10px;" routerLink="/login">Log In</a>
+        </p>
+    </div>
 
 
 </header>
