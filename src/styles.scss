@@ -123,7 +123,7 @@ $md-mypurple: (
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $kanban-primary: mat-palette($md-myred);
-$kanban-accent: mat-palette($md-myyellow, A200, A100, A400);
+$kanban-accent: mat-palette($md-myyellow);
 
 // The warn palette is optional (defaults to red).
 $kanban-warn: mat-palette($md-mypurple);

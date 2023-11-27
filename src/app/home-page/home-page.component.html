@@ -1,14 +1,42 @@
 
 <header>
     <h1>Welcome to my Kanban App!</h1>
-    <h2>Powered by <img style="width: 1.25em;" src="/assets/angular-logo.svg" /> Angular and <img style="width: 0.9em;" src="/assets/firebase-logo.svg" /> Firebase</h2>
-
-    <div *ngIf="!(afAuth.authState | async)">
+    
+    <div *ngIf="!(afAuth.authState | async) && !(isHandset$ | async)">
         <h3>Please log in to get started!</h3>
         <p>
-            <a mat-raised-button color="accent" style="margin-right: 10px;" routerLink="/login">Log In</a>
+            <a mat-raised-button color="primary" style="margin-right: 10px;" routerLink="/login">Log In</a>
         </p>
     </div>
+    
+    <div style="font-size: large; padding-top: 3em; padding-left: 0.25em; padding-right: 0.25em; font-style: italic;">
+            Kanban is a visual system used to manage and keep track of work as it moves through a process. The word kanban is Japanese and roughly translated means "card you can see." 
+    </div>
+    
+    <div *ngIf="!(isHandset$ | async)" style="padding-top: 2em;">
+        <video max-width="80%" height="auto" autoplay muted loop>
+            <source src="/assets/example.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div style="padding-top: 2em;">
+        Feel free to use this PWA however you'd like!
+    </div>
+
+    <div style="padding-bottom: 5em; ;">
+
+    </div>
+
+
+    <div *ngIf="!(afAuth.authState | async) && (isHandset$ | async)" style="padding-bottom: 3em;">
+        <h3>Please log in to get started!</h3>
+        <p>
+            <a mat-raised-button color="primary" style="margin-right: 10px;" routerLink="/login">Log In</a>
+        </p>
+    </div>
+
+    <h4>Powered by <img style="width: 1.25em;" src="/assets/angular-logo.svg" /> Angular and  <img style="width: 0.9em;" src="/assets/firebase-logo.svg" /> Firebase</h4>
+
 
 
 </header>

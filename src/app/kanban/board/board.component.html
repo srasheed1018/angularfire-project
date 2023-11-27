@@ -6,7 +6,7 @@
       {{ board.title }}
     </mat-card-title>
     <mat-card-subtitle>
-      {{ board.id }}
+      
     </mat-card-subtitle>
   </mat-card-header>
 
@@ -25,10 +25,11 @@
       <mat-card [ngClass]="task.label"> {{ task.description }} </mat-card>
     </div>
 
-    <button mat-stroked-button (click)="openDialog()">
-      <mat-icon>add</mat-icon>
-    </button>
-
-    <app-delete-button (delete)="handleDelete()"></app-delete-button>
+    <div style="padding: 0.5em;">
+      <button mat-stroked-button (click)="openDialog()">
+        <mat-icon>add</mat-icon>
+      </button>
+      <app-delete-button (delete)="handleDelete()"></app-delete-button>
+    </div>
   </div>
 </mat-card>
