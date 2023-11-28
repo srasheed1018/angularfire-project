@@ -7,18 +7,18 @@
     </div>
     
     <div *ngIf="!(isHandset$ | async)" style="padding-top: 2em;">
-        <video max-width="80%" height="auto" autoplay muted loop>
+        <video max-width="80%" height="auto" autoplay muted loop controls>
             <source src="/assets/example.mp4" type="video/mp4" />
         </video>
     </div>
     <div *ngIf="(isHandset$ | async)" style="padding-top: 2em;">
-        <video style="max-width: 100%; height: auto;" autoplay muted loop>
+        <video style="max-width: 100%; height: auto;" autoplay muted loop controls>
             <source src="/assets/example.mp4" type="video/mp4" />
         </video>
     </div>
 
     <div style="padding-top: 0.5em;">
-        This is a Progrssive Web App (PWA), which means you can make this app work like a native application on your device (except iOS, sorry 😢).
+        This is a Progressive Web App (PWA), which means you can make this app work like a native application on your device (except iOS, sorry 😢).
         <br/>
         <br *ngIf="(isHandset$ | async)"/>
         Click the install button on the right side of the URL address bar to install, or ignore it and use the web app like normal.
