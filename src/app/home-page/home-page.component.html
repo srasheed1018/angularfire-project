@@ -2,33 +2,20 @@
 <header>
     <h1>Welcome to my Kanban App!</h1>
     
-    <div style="font-size: large; padding-top: 1em; padding-left: 0.25em; padding-right: 0.25em; font-style: italic;">
-            Kanban is a visual system used to manage and keep track of work as it moves through a process. The word kanban is Japanese and roughly translated means "card you can see." 
-    </div>
-    
-    <div *ngIf="!(isHandset$ | async)" style="padding-top: 2em;">
-        <video max-width="80%" height="auto" autoplay muted loop controls>
-            <source src="/assets/example.mp4" type="video/mp4" />
-        </video>
-    </div>
-    <div *ngIf="(isHandset$ | async)" style="padding-top: 2em;">
-        <video style="max-width: 100%; height: auto;" autoplay muted loop controls>
-            <source src="/assets/example.mp4" type="video/mp4" />
-        </video>
-    </div>
-
-    <div style="padding-top: 0.5em;">
-        This is a Progressive Web App (PWA), which means you can make this app work like a native application on your device (except iOS, sorry 😢).
+    <div *ngIf="!(isHandset$ | async)" style="padding: 3em; font-size: x-large;">
+        This is a Progressive Web App (PWA), which means you can install this app as a native application on your device (except iOS 😢).
         <br/>
-        <br *ngIf="(isHandset$ | async)"/>
+        <br/>
         Click the install button on the right side of the URL address bar to install, or ignore it and use the web app like normal.
         <br/>
         <br/>
         Feel free to use this app however you'd like!
     </div>
 
-    <div style="padding-bottom: 1em; ;">
-
+    <div style="padding: 1em;">
+        <a mat-flat-button color="primary" routerLink="/kanban" style="margin: 1rem;">🍱 Kanban Board</a>
+        <br/>
+        <a mat-flat-button color="accent" routerLink="/login" style="margin: 1rem;">🔑 Login</a>
     </div>
 
     <h4>Powered by <img style="width: 1.25em;" src="/assets/angular-logo.svg" /> Angular and  <img style="width: 0.9em;" src="/assets/firebase-logo.svg" /> Firebase</h4>
